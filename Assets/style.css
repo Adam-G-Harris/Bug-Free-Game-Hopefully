@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	font-family: 'Avenir';
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.title {
+	font-size: 2rem;
+	margin-bottom: 3rem;
+}
+
+.allies-container {
+	width: 60%;
+	height: 30%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.allies-container > .doges {
+	width: 20%;
+	height: 100%;
+	font-size: 0;
+	border-radius: 2px;
+	border: 1px solid black;
+}
+
+.doges > img {
+	width: 100%;
+	height: 80%;
+}
+
+.doge-name {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	font-size: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.divider {
+	width: 80%;
+	height: 1px;
+	margin: 2rem 0 2rem 0;
+	background-color: grey;
+}
+
+.enemies-container {
+	width: 60%;
+	height: 30%;
+	display: flex;
+}
+
+.enemies-container > div > .doges {
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+	border-radius: 2px;
+	border: 1px solid black;
+}
+
+#hero {
+	width: 20%;
+	height: 100%;
+	display: flex;
+}
+
+#enemy {
+	width: 20%;
+	height: 100%;
+	display: flex;
+}
+
+#display {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	font-size: 2rem;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	transition: box-shadow 2s;
+}
+
+#heroAttack {
+	outline: none;
+	font-size: 1rem;
+	font-weight: 100;
+	margin-top: 1rem;
+	border-radius: 2px;
+	padding: 1rem 2rem;
+	border: 1px solid black;
+}
+
+#heroAttack:hover {
+	cursor: pointer;
+}
+
+#heroAttack:active {
+	background-color: rgb(243, 243, 243);
+}
+
+#heroStats {
+	width: 15%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#enemyStats {
+	width: 15%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
